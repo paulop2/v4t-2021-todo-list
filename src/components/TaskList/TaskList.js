@@ -32,8 +32,8 @@ export const TaskList = ({ loading, taskList, changeTaskStatus }) => {
         width: calc(100% / 3);
         display: flex;
         justify-content: flex-start;
-        align-itens: center;
-        flex-direction: colum;`
+        align-items: center;
+        flex-direction: column;`
 
         const Row = styled.div`
         display: flex;`
