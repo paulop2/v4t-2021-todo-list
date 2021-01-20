@@ -47,7 +47,7 @@ export const TaskCard = ({ taskId, changeTaskStatus, status, whatToDo, who, prio
     `
 
 
-    return <Card size="small" title={getPriorityToSetIntoTitle()} extra={getCardButtons()} style={{ marginBottom: '2rem' }}>
+    return <Card size="small" title={getPriorityToSetIntoTitle()} extra={getCardButtons()} style={{ marginBottom: '2rem', width: '100%' }}>
         <div>
             {whatToDo}
         </div>
