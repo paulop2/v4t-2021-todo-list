@@ -1,70 +1,191 @@
-# Getting Started with Create React App
+<p align="center">
+  <img alt="GitHub language count" src="https://img.shields.io/github/languages/count/paulop2/Happy-NLW3?color=%2304D361">
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+  <img alt="Repository size" src="https://img.shields.io/github/repo-size/paulop2/Happy-NLW3">
 
-## Available Scripts
+  
+  <a href="https://github.com/paulop2/Happy-NLW3/commits/master">
+    <img alt="GitHub last commit" src="https://img.shields.io/github/last-commit/paulop2/Happy-NLW3">
+  </a>
+    
+   <img alt="License" src="https://img.shields.io/badge/license-MIT-brightgreen">
+   <a href="https://github.com/paulop2/Happy-NLW3/stargazers">
+    <img alt="Stargazers" src="https://img.shields.io/github/stars/paulop2/Happy-NLW3?style=social">
+  </a>
 
-In the project directory, you can run:
+  <a href="https://blog.rocketseat.com.br/como-fazer-um-bom-readme/">
+    <img alt="Template" src="https://img.shields.io/badge/Template%20por-Blog Rocketseat-%237519C1">
+  </a>
 
-### `yarn start`
+</p>
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+<h1 align="center">
+    <img alt="Happy" title="#ToDo" src="./src/assets/logo.png" href="" width="100px"/> 
+    <p align="center">
+    <strong >V4T - To do list</strong>
+    </p>
+    
+</h1>
 
-### `yarn test`
+<p align="center">
+  <img alt="To do" src="./assetsReadme/banner.png" width="100%"> COLOCAR AQUI A IMAGEM BAIXADA
+</p>
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-### `yarn build`
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+<h4 align="center">
+	🚀 Venturus4Tech - Concluído 🚀 
+</h4>
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+<p align="center">
+ <a href="#-sobre-o-projeto">Sobre</a> •
+ <a href="#-funcionalidades">Funcionalidades</a> •
+ <a href="#-layout">Layout</a> • 
+ <a href="#-como-executar-o-projeto">Como executar</a> • 
+ <a href="#-tecnologias">Tecnologias</a> • 
+ <a href="#-autor">Autor</a> • 
+ <a href="#user-content--licença">Licença</a>
+</p>
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-### `yarn eject`
+## 💻 Sobre o projeto
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+<img alt="Todo" title="#ToDo" src="./src/assets/logo.png" width="20px" align="center" /> Happy - é um To Do List para ajudar na organização de tarefas.
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+Projeto desenvolvido durante a **V4T 9 - Venturus 4 Tech 9ª edição** oferecida pela [Rocketseat](https://www.venturus.org.br/).
+O V4T tem como foco compartilhar conhecimento com a comunidade e construir uma aplicação web para que apresentar alguns conceitos e tecnologias interessantes, como o Firebase.
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+---
 
-## Learn More
+## ⚙️ Funcionalidades
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+- [x] Tarefas podem ser cadastradas como:
+  - [x] Texto; 
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+- [x] O usuário pode:
+  - [x] Alterar o Status de uma tarefa;
+    - [x] To do;
+    - [x] Doing;
+    - [x] Done;
+  - [x] Selecionar o responsável;
+  - [x] Selecionar a urgência;
 
-### Code Splitting
+---
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+## 🎨 Layout
 
-### Analyzing the Bundle Size
+O layout da aplicação está disponível na Vercel:            <a align=center href="https://v4t-2021-todo-list-eptw63fn1.vercel.app/">
+  <img style="justify-content: center;" alt="Shield template by tgmarinho" src="https://img.shields.io/badge/Acessar%20Web%20-Vercel-%2304D361">
+</a>
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
 
-### Making a Progressive Web App
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
 
-### Advanced Configuration
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+### Web
 
-### Deployment
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+<p align="center" style="justify-content: center;">
+  <img alt="NextLevelWeek" title="#NextLevelWeek" src="./assetsReadme/webProfile.png" width="400px">
+</p>
 
-### `yarn build` fails to minify
+---
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+## 🚀 Como executar o projeto
+
+Este projeto é um mono-repo!
+
+### Pré-requisitos
+
+Antes de começar, você vai precisar ter instalado em sua máquina as seguintes ferramentas:
+- [Git](https://git-scm.com), 
+- [Node.js](https://nodejs.org/en/),
+- [Yarn](https://classic.yarnpkg.com/).
+
+Além disto é bom ter um editor para trabalhar com o código como [VSCode](https://code.visualstudio.com/)
+
+#### 🎲 Rodando o projeto
+
+```bash
+
+# Clone este repositório
+$ git clone git@github.com:paulop2/v4t-2021-todo-list.git
+
+# Acesse a pasta do projeto no terminal/cmd
+$ cd v4t-2021-todo-list
+
+# Instale as dependências
+$ yarn
+
+# Execute a aplicação em modo de desenvolvimento
+$ yarn start
+
+# O servidor inciará na porta:3333 - acesse http://localhost:3000 
+
+```
+
+
+---
+
+## 🛠 Tecnologias
+
+As seguintes ferramentas foram usadas na construção do projeto:
+
+#### **Website**  ([React](https://reactjs.org/) 
+
+-   **[Ant Design](https://ant.design/)**
+-   **[Axios](https://github.com/axios/axios)**
+-   **[Styled Components](https://styled-components.com/)**
+
+> Veja o arquivo  [package.json](https://github.com/paulop2/v4t-2021-todo-list/blob/main/package.json)
+
+#### **Backend**  ([NodeJS](https://nodejs.org/en/)
+
+-   **[Firebase](https://firebase.google.com/?hl=pt-br)**
+
+#### **Utilitários**
+
+-   Editor:  **[Visual Studio Code](https://code.visualstudio.com/)**
+-   Teste de API:  **[Insomnia](https://insomnia.rest/)**
+-   Ícones:  **[Ant Design](https://ant.design/components/icon/#header)**
+
+
+---
+## 💪 Como contribuir para o projeto
+
+1. Faça um **fork** do projeto.
+2. Crie uma nova branch com as suas alterações: `git checkout -b my-feature`
+3. Salve as alterações e crie uma mensagem de commit contando o que você fez: `git commit -m "feature: My new feature"`
+4. Envie as suas alterações: `git push origin my-feature`
+
+
+---
+
+##  Autor
+
+
+ <sub><b>Paulo Vitor de Souza</b></sub></a> <a href="https://blog.rocketseat.com.br/author/thiago/" title="Rocketseat"></a>
+ <br />
+
+[![Linkedin Badge](https://img.shields.io/badge/-Paulo_Vitor-blue?style=flat-square&logo=Linkedin&logoColor=white&link=https://www.linkedin.com/in/paulop2-vs/)](https://www.linkedin.com/in/paulop2-vs/) 
+[![Gmail Badge](https://img.shields.io/badge/-paulo225vitor@gmail.com-c14438?style=flat-square&logo=Gmail&logoColor=white&link=mailto:paulo225vitor@gmail.com)](mailto:paulo225vitor@gmail.com)
+
+<!-- Corrigir o link para o linkedin -->
+
+---
+
+## 📝 Licença
+
+Este projeto esta sobe a licença [MIT](./LICENSE).
+
+---
+
+##  Versões do README
+
+[🚧Português 🇧🇷🚧](./README.md)
+
+## Direitos de imagem
+
+<div>Icone por <a href="https://www.flaticon.com/authors/ultimatearm" title="ultimatearm">ultimatearm</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div>
