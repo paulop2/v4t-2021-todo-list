@@ -3,7 +3,7 @@ import React from 'react'
 import styled from 'styled-components'
 import { TaskCard } from './TaskCard/TaskCard'
 
-export const TaskList = ({ loading, taskList, changeTaskStatus }) => {
+export const TaskList = ({ loading, taskList, changeTaskStatus, handleDeleteTask }) => {
 
     const TaskListLayout = styled.div`
     grid-column: 2 / 5;
@@ -42,17 +42,17 @@ export const TaskList = ({ loading, taskList, changeTaskStatus }) => {
             <Column> {
                 taskList
                     .filter(x => x.status === 'To Do')
-                    .map((x, i) => (<TaskCard key={`To Do ${i}`} taskId={x.taskId} changeTaskStatus={changeTaskStatus} status={x.status} whatToDo={x.whatToDo} who={x.selectedWho} priority={x.priority} />))
+                    .map((x, i) => (<TaskCard key={`To Do ${i}`} taskId={x.taskId} changeTaskStatus={changeTaskStatus} handleDeleteTask={handleDeleteTask} status={x.status} whatToDo={x.whatToDo} who={x.selectedWho} priority={x.priority} />))
             } </Column>
             <Column> {
                 taskList
                     .filter(x => x.status === 'Doing')
-                    .map((x, i) => (<TaskCard key={`Doing ${i}`} taskId={x.taskId} changeTaskStatus={changeTaskStatus} status={x.status} whatToDo={x.whatToDo} who={x.selectedWho} priority={x.priority} />))
+                    .map((x, i) => (<TaskCard key={`Doing ${i}`} taskId={x.taskId} changeTaskStatus={changeTaskStatus} handleDeleteTask={handleDeleteTask} status={x.status} whatToDo={x.whatToDo} who={x.selectedWho} priority={x.priority} />))
             }</Column>
             <Column> {
                 taskList
                     .filter(x => x.status === 'Done')
-                    .map((x, i) => (<TaskCard key={`Done ${i}`} taskId={x.taskId} changeTaskStatus={changeTaskStatus} status={x.status} whatToDo={x.whatToDo} who={x.selectedWho} priority={x.priority} />))
+                    .map((x, i) => (<TaskCard key={`Done ${i}`} taskId={x.taskId} changeTaskStatus={changeTaskStatus} handleDeleteTask={handleDeleteTask} status={x.status} whatToDo={x.whatToDo} who={x.selectedWho} priority={x.priority} />))
             } </Column>
         </Row>
     }

@@ -1,8 +1,8 @@
-import { Spin } from 'antd'
+// import { Spin } from 'antd'
 import React, { useEffect, useState } from 'react'
 import styled from 'styled-components'
-import uniqid from 'uniqid'
-import axios from 'axios'
+// import uniqid from 'uniqid'
+import api from '../../services/api'
 
 import { TaskForm } from '../../components/TaskForm/TaskForm'
 import { TaskList } from '../../components/TaskList/TaskList'
@@ -13,7 +13,7 @@ export const Layout = () => {
     const [loading, setLoading] = useState(false)
 
     useEffect(() => {
-        axios.get('https://tech-2021-todo-list-default-rtdb.firebaseio.com/tasks.json').then(response => {
+        api.get('/tasks.json').then(response => {
             if (response.status === 200 && response.data) {
                 const posts = Object.keys(response.data).map(key => ({
                     taskId: key,
@@ -31,10 +31,13 @@ export const Layout = () => {
         });
     }, []);
 
+
+
+
     const submitNewTask = (newTask) => {
         setLoading(true)
 
-        axios.post('https://tech-2021-todo-list-default-rtdb.firebaseio.com/tasks.json', newTask).then(response => {
+        api.post('/tasks.json', newTask).then(response => {
             if (response.status === 200) {
                 const taskListCopy = [...taskList]
                 taskListCopy.push({
@@ -61,7 +64,8 @@ export const Layout = () => {
     const changeTaskStatus = (taskId, moveTo) => {
         setLoading(true)
 
-        axios.patch('https://tech-2021-todo-list-default-rtdb.firebaseio.com/tasks/' + taskId + '.json', { status: moveTo }).then(response => {
+        // axios.patch('https://tech-2021-todo-list-default-rtdb.firebaseio.com/tasks/' + taskId + '.json', { status: moveTo }).then(response => {
+        api.patch(`/tasks/${taskId}.json`, { status: moveTo }).then(response => {
             if (response.status === 200) {
                 const taskListCopy = [...taskList]
                 const taskToBeMoved = taskListCopy.find(x => x.taskId === taskId)
@@ -81,6 +85,39 @@ export const Layout = () => {
         });
     }
 
+    const handleDeleteTask = (taskId) => {
+        setLoading(true)
+
+        api.delete(`/tasks/${taskId}.json`, {}).then(response => {
+            if (response.status === 200) {
+                // const taskListCopy = [...taskList]
+                // const taskToBeRemoved = taskListCopy.find(x => x.taskId === taskId)
+
+                setLoading(false)
+                setTaskList(taskList.filter(taskList => taskList.taskId !== taskId))
+            } else {
+                setLoading(false)
+
+                alert('Ops!!! Something wrong happened!!!\n\n Server error: ' + response.status);
+            }
+
+
+            //     await axios.delete(`https://tech-2021-todo-list-default-rtdb.firebaseio.com/tasks/${taskId}.json`);
+            //     setTaskList(taskList.filter(taskList => taskIdonClick={ () => handleDeleteTask(taskId)} ))
+
+            //     alert('Erro ao deletar caso, tente novamente')
+            // }
+
+
+
+        }).catch(error => {
+            setLoading(false)
+
+            alert('Ops!!! Something wrong happened!!!\n\n' + error);
+        });
+    }
+
+
     const Structure = styled.div`
         overflow-y: auto;
         width: 100vw;
@@ -93,7 +130,7 @@ export const Layout = () => {
 
     return <Structure>
         <TaskForm loading={loading} submitNewTask={submitNewTask} />
-        <TaskList loading={loading} taskList={taskList} changeTaskStatus={changeTaskStatus} />
+        <TaskList loading={loading} taskList={taskList} changeTaskStatus={changeTaskStatus} handleDeleteTask={handleDeleteTask} />
     </Structure>
 
 }

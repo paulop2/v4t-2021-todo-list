@@ -18,10 +18,12 @@ export const WhatToDo = ({ initialWhatToDo, onChangeWhatToDo }) => {
     border-radius: 5px;
     border: 0;
     height: 5rem;
-    outline: none;`
+    outline: none;
+    padding-left:1rem;
+    `
 
     return <FormItem>
         <WhatToDoLabel> What to do? </WhatToDoLabel>
-        <InputWhatToDo defaultValue={initialWhatToDo} onChange={(e) => onChangeWhatToDo(e.target.value)} type="text" />
+        <InputWhatToDo defaultValue={initialWhatToDo} onChange={(e) => onChangeWhatToDo(e.target.value)} type="textArea" />
     </FormItem >
 }

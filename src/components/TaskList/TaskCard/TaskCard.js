@@ -1,9 +1,14 @@
-import React, { Fragment } from 'react'
-import { Avatar, Button, Card, Tag } from 'antd';
+import React from 'react'
+import { Avatar, Card, Tag } from 'antd';
 import styled from 'styled-components'
-import { whoList } from '../../../helpers/whoList';
+import uniqid from 'uniqid'
 
-export const TaskCard = ({ taskId, changeTaskStatus, status, whatToDo, who, priority }) => {
+import { whoList } from '../../../helpers/whoList';
+import { DeleteFilled } from '@ant-design/icons';
+
+
+
+export const TaskCard = ({ taskId, changeTaskStatus, status, whatToDo, who, priority, handleDeleteTask }) => {
 
     const getPriorityToSetIntoTitle = () => {
         const ColorBlock = styled.span`
@@ -40,18 +45,41 @@ export const TaskCard = ({ taskId, changeTaskStatus, status, whatToDo, who, prio
         }
     }
 
-    const Footer = styled.div` 
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-end;
+    const Button = styled.button`
+        background-color:#fff;
+        border:0;
+
+        ${DeleteFilled}:hover {
+            opacity: 0.8;
+        };
     `
 
 
-    return <Card size="small" title={getPriorityToSetIntoTitle()} extra={getCardButtons()} style={{ marginBottom: '2rem', width: '100%' }}>
+    const Footer = styled.div` 
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-end;
+    `
+
+
+    return <Card
+        key={uniqid()}
+        size="small"
+        title={getPriorityToSetIntoTitle()}
+        extra={getCardButtons()}
+        style={{
+            marginBottom: '2rem',
+            width: '100%',
+            borderRadius: '5px'
+        }}>
+
         <div>
             {whatToDo}
         </div>
         <Footer>
+
+            <Button onClick={() => handleDeleteTask(taskId)}  ><DeleteFilled size={30} /></Button>
+
             <span> Created at {new Date().toLocaleDateString()} </span>
 
             <Avatar src={<img src={whoList.find(x => x.idx === who).avatarSource} alt={`Avatar ${who}`} />} />
