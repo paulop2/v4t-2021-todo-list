@@ -29,7 +29,7 @@
 </h1>
 
 <p align="center">
-  <img alt="To do" src="./assetsReadme/banner.png" width="100%"> COLOCAR AQUI A IMAGEM BAIXADA
+  <img alt="To do" src="./src/assets/v4t-todo.png" width="100%"> COLOCAR AQUI A IMAGEM BAIXADA
 </p>
 
 
@@ -69,8 +69,10 @@ O V4T tem como foco compartilhar conhecimento com a comunidade e construir uma a
     - [x] To do;
     - [x] Doing;
     - [x] Done;
+  - [x] Excluir uma tarefa (modificação);
   - [x] Selecionar o responsável;
-  - [x] Selecionar a urgência;
+  - [x] Selecionar a urgência.
+
 
 ---
 
@@ -81,15 +83,6 @@ O layout da aplicação está disponível na Vercel:            <a align=center 
 </a>
 
 
-
-
-
-### Web
-
-
-<p align="center" style="justify-content: center;">
-  <img alt="NextLevelWeek" title="#NextLevelWeek" src="./assetsReadme/webProfile.png" width="400px">
-</p>
 
 ---
 
