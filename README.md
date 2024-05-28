@@ -29,7 +29,7 @@
 </h1>
 
 <p align="center">
-  <img alt="To do" src="./src/assets/v4t-todo.png" width="100%"> COLOCAR AQUI A IMAGEM BAIXADA
+  <img alt="To do" src="./src/assets/v4t-todo.png" width="100%">
 </p>
 
 
